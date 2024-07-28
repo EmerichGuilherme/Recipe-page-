@@ -1,0 +1,175 @@
+/* variações de cores*/
+$corDoTexto: hsl(24, 5%, 18%);
+$corDeFundo : hsl(30, 54%, 90%);
+$corContainer : hsl(0, 0%, 100%);
+$corPreparationTime : hsl(330, 100%, 98%);
+$corPreparationTime2: hsl(332, 51%, 32%);
+$corTitulos: hsl(14, 45%, 36%);
+
+
+/* fontes */
+
+$fontePadrao: "Outfit", sans-serif;
+$fonteTitulos: "Young Serif", serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: $corDeFundo;
+    font-size: 16px;
+    font-family: $fontePadrao;
+    color: $corDoTexto;
+}
+
+.container{
+    display: grid;
+    max-width: 640px;
+    background-color: $corContainer;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.title {
+    
+    &__img {
+        max-width: 640px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__text {
+            padding-top: 16px;
+            margin-bottom: 24px;
+        
+    }
+    
+}
+
+
+h1 , h2, h3 {
+    font-family: $fonteTitulos;
+    font-weight: 400;
+}
+
+h2, h3 {
+    color: $corTitulos
+}
+
+.preparation__time {
+    padding: 20px;
+    background-color: $corPreparationTime;
+    border-radius: 20px;
+    margin-top:10 ;
+
+    &__list {
+        margin-left: 24px;
+        padding-top: 8px;
+    }
+
+    &__item {
+        padding: 6px;
+    
+    &::marker {
+        color: $corPreparationTime2 ;
+    }
+    }
+    
+    & h3 {
+        color: $corPreparationTime2;
+        font-family: $fontePadrao;
+        font-weight: bold;
+    }
+    
+}
+
+.ingredients {
+    padding-top: 24px;
+    margin-bottom: 24px;
+
+    &__title {
+        margin-bottom: 16px;
+        margin-left: 0px;
+    }
+
+    &__list {
+        
+        &__item {
+            padding: 4px;
+            margin-left: 24px;
+        
+            &::marker {
+            color: $corTitulos;
+            }
+        }
+        }
+    }
+
+.instructions {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    &__title {
+        padding: 16px;
+    }
+
+    &__list {
+        list-style: decimal;
+        
+
+    }
+    &__item {
+        margin-left: 24px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        
+
+        &::marker {
+            color: $corTitulos;
+            
+            }
+    }
+}
+
+.nutrition {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    &__title {
+        padding: 16px;
+    }
+    font-size: 18px;
+    &__item {
+        padding: 16px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+        display: flex;
+        justify-content: space-around;
+        
+        
+        &--destaque {
+            text-align: end;
+            color: $corTitulos;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+    }
+    
+    &__list {
+        
+        margin: 0 10;
+        
+        list-style: none;
+        
+    }
+
+}
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+

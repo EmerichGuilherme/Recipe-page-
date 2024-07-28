@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* variações de cores*/
+/* fontes */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(24, 5%, 18%);
+}
+
+.container {
+  display: grid;
+  max-width: 640px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.title__img {
+  max-width: 640px;
+  width: 100%;
+  border-radius: 10px;
+}
+.title__text {
+  padding-top: 16px;
+  margin-bottom: 24px;
+}
+
+h1, h2, h3 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+h2, h3 {
+  color: hsl(14, 45%, 36%);
+}
+
+.preparation__time {
+  padding: 20px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 20px;
+  margin-top: 10;
+}
+.preparation__time__list {
+  margin-left: 24px;
+  padding-top: 8px;
+}
+.preparation__time__item {
+  padding: 6px;
+}
+.preparation__time__item::marker {
+  color: hsl(332, 51%, 32%);
+}
+.preparation__time h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+
+.ingredients {
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+.ingredients__title {
+  margin-bottom: 16px;
+  margin-left: 0px;
+}
+.ingredients__list__item {
+  padding: 4px;
+  margin-left: 24px;
+}
+.ingredients__list__item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+.instructions__title {
+  padding: 16px;
+}
+.instructions__list {
+  list-style: decimal;
+}
+.instructions__item {
+  margin-left: 24px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+.instructions__item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  font-size: 18px;
+}
+.nutrition__title {
+  padding: 16px;
+}
+.nutrition__item {
+  padding: 16px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  display: flex;
+  justify-content: space-around;
+}
+.nutrition__item--destaque {
+  text-align: end;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  margin-left: 50px;
+}
+.nutrition__list {
+  margin: 0 10;
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */
